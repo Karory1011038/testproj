@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Список изображений</h1>
+{% if exist %}
+    <h4>Нет доступных изображений</h4>
+{% endif %}
+{% for image in images %}
+    <h1><a href="img/{{ image.id }}">{{ image.image.name }}</a></h1>
+{% endfor %}
+<a href="/add">Добавить изображение</a>
+</body>
+</html>
