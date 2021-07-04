@@ -1,11 +1,17 @@
-# testproj
+# Тестовый проект для IdaProject
 
-1.Клонируете гит-репозиторий
+Setup / Установка
 
-2.Создаете виртуальное окружение
+$ git clone https://github.com/Karory1011038/testproj.git
 
-3.Устанавливаете requirements.txt
+$ cd testproj
 
-4.Запускаете сервер командрой python manage.py runserver
+$ pipenv install --dev && pipenv shell
 
-5.Используете сайт.
+$ pip install -r requirements.txt
+
+$ python manage.py migrate
+
+Running Development Servers / Запуск сервера разработки
+
+$ python manage.py runserver

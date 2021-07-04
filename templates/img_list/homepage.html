@@ -6,11 +6,11 @@
 </head>
 <body>
 <h1>Список изображений</h1>
-{% if exist %}
+{% if not_exist %}
     <h4>Нет доступных изображений</h4>
 {% endif %}
 {% for image in images %}
-    <h1><a href="img/{{ image.id }}">{{ image.image.name }}</a></h1>
+    <h2><a href="img/{{ image.id }}">{{ image.image.name }}</a></h2>
 {% endfor %}
 <a href="/add">Добавить изображение</a>
 </body>
